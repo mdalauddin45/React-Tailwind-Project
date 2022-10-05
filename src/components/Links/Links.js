@@ -5,7 +5,7 @@ const Links = ({ route }) => {
   console.log(route);
   return (
     <div>
-      <h1>hi</h1>
+      <h1>{route.name}</h1>
     </div>
   );
 };
