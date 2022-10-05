@@ -1,6 +1,7 @@
 import React from "react";
 import Links from "../Links/Links";
 import "./NavBar.css";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 const NavBar = () => {
   const routes = [
@@ -12,7 +13,8 @@ const NavBar = () => {
   ];
   return (
     <nav>
-      <ul>
+      <Bars3Icon className="h-6 w-6" />
+      <ul className="md:flex justify-center ">
         {routes.map((route) => (
           <Links key={route.id} route={route}></Links>
         ))}
