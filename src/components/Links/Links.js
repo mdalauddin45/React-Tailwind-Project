@@ -5,7 +5,9 @@ const Links = ({ route }) => {
   console.log(route);
   return (
     <div>
-      <h1>{route.name}</h1>
+      <li>
+        <a href={route.path}>{route.name} </a>
+      </li>
     </div>
   );
 };
